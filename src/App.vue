@@ -11,8 +11,10 @@
 export default {
   name: 'App',
   mounted(){
-    console.log(123);
     this.$toast('Hello world!')
+    this.$http.post('http://localhost:3000/getMobileCode',{}).then(res=>{
+      console.log(res);
+    })
   }
 }
 </script>
