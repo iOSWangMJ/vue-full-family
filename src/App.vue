@@ -8,7 +8,6 @@
   </div>
 </template>
 <script>
-<<<<<<< HEAD
   export default {
     name: 'App',
     mounted(){
@@ -37,34 +36,4 @@
       }
     }
   }
-=======
-export default {
-  name: 'App',
-  mounted(){
-    this.$toast('Hello world!')
-    this.$http.post('http://localhost:3000/getMobileCode',{}).then(res=>{
-      console.log(res);
-    })
-  }
-}
-</script>
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
->>>>>>> 72649a71e7a3f2742eb6f07b2312a719b0c3a3ad
 </style>
